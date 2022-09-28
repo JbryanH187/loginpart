@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#71C2E8"
+    tools:context="com.example.login.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/feicon" />
+
+        <TextView
+            android:id="@+id/welcomeId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:drawableStart="@android:color/holo_blue_bright"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:text="Welcome to FaceRecognition "
+            android:textColor="#ADE1F4"
+            android:textColorHint="@android:color/white"
+            android:textSize="21sp"
+            android:textStyle="italic" />
+
+
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/StartButtonId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="279dp"
+        android:layout_marginBottom="-3dp"
+        android:background="@color/teal_200"
+        android:backgroundTint="@color/purple_200"
+        android:text="Entrar" />
+
+</RelativeLayout>
