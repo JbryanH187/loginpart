@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Bryan Progra/AndroidStudioProject/login/loginpart/app/src/main/res/layout/activity_main.xml" value="0.358695652173913" />
+        <entry key="..\:/Bryan Progra/AndroidStudioProject/login/loginpart/app/src/main/res/layout/activity_menu2.xml" value="0.3484375" />
+        <entry key="..\:/Bryan Progra/AndroidStudioProject/login/loginpart/app/src/main/res/layout/activity_register_device.xml" value="0.358695652173913" />
         <entry key="..\:/BryanPrueba/LogIn/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/BryanPrueba/LogIn/app/src/main/res/layout/activity_register_device.xml" value="0.16032608695652173" />
       </map>
