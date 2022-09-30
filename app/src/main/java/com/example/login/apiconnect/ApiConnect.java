@@ -9,8 +9,7 @@ import retrofit2.http.POST;
 
 public interface ApiConnect {
 
-
     @POST("checkImei")
-    Call<ResponseLogin> getLogin(@Body RequestLogin image);
+    Call<ResponseLogin> getLogin(@Body RequestLogin bodyRequest);
 
 }

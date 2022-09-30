@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#71C2E8"
+    android:background="@drawable/gradientregistermenu"
     tools:context="com.example.login.MainActivity">
 
 
@@ -55,8 +55,6 @@
         android:layout_alignParentBottom="true"
         android:layout_marginTop="279dp"
         android:layout_marginBottom="-3dp"
-        android:background="@color/teal_200"
-        android:backgroundTint="@color/purple_200"
         android:text="Entrar" />
 
 </RelativeLayout>

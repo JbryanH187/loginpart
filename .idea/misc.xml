@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Bryan Progra/AndroidStudioProject/login/loginpart/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1935" />
+        <entry key="..\:/Bryan Progra/AndroidStudioProject/login/loginpart/app/src/main/res/drawable/gradientregistermenu.xml" value="0.1935" />
+        <entry key="..\:/Bryan Progra/AndroidStudioProject/login/loginpart/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1935" />
         <entry key="..\:/Bryan Progra/AndroidStudioProject/login/loginpart/app/src/main/res/layout/activity_main.xml" value="0.358695652173913" />
         <entry key="..\:/Bryan Progra/AndroidStudioProject/login/loginpart/app/src/main/res/layout/activity_menu2.xml" value="0.3484375" />
         <entry key="..\:/Bryan Progra/AndroidStudioProject/login/loginpart/app/src/main/res/layout/activity_register_device.xml" value="0.358695652173913" />
