@@ -62,7 +62,6 @@ class MainActivity : AppCompatActivity() {
                 ex.message?.let { Log.e("", it) }
             }
             Log.d("MainActivity","Como que no inicia xD")
-
         }
     }
 

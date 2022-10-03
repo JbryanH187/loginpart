@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradientregistermenu"
-    tools:context="com.example.login.MainActivity">
+    tools:context="com.example.login.RegisterDeviceActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -26,11 +26,15 @@
             app:srcCompat="@drawable/feicon" />
 
         <EditText
+<<<<<<< HEAD
             android:id="@+id/deviceNameEditText"
+=======
+            android:id="@+id/deviceNameRegisterId"
+>>>>>>> 2766b76aa7644483e7455fdd76a35c238cfba6e9
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_marginBottom="10dp"
-            android:background="@android:color/holo_blue_light"
+            android:background="#8ACDE6"
             android:drawableStart="@android:color/holo_blue_bright"
             android:drawablePadding="10dp"
             android:ems="10"
@@ -42,7 +46,11 @@
             android:textSize="21sp" />
 
         <Button
+<<<<<<< HEAD
             android:id="@+id/registerDeviceButton"
+=======
+            android:id="@+id/registerButtonId"
+>>>>>>> 2766b76aa7644483e7455fdd76a35c238cfba6e9
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_marginBottom="30dp"

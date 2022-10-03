@@ -10,6 +10,11 @@
 
     <application
         android:usesCleartextTraffic="true"
+<<<<<<< HEAD
+=======
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+>>>>>>> 2766b76aa7644483e7455fdd76a35c238cfba6e9
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"

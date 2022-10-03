@@ -5,23 +5,38 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.login.databinding.ActivityRegisterDeviceBinding
 import com.example.login.modelos.RequestRegisterDevice
+<<<<<<< HEAD
+=======
+import com.example.login.modelos.ResponseLogin
+>>>>>>> 2766b76aa7644483e7455fdd76a35c238cfba6e9
 import com.example.login.modelos.ResponseRegisterDevice
 import com.example.login.utilities.Utilities
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+<<<<<<< HEAD
 import java.lang.Boolean.FALSE
 
 class RegisterDeviceActivity : AppCompatActivity(){
 
     private lateinit var binding: ActivityRegisterDeviceBinding
     private val u: Utilities = Utilities()
+=======
+
+class RegisterDeviceActivity : AppCompatActivity(){
+
+    private var u: Utilities = Utilities()
+    private lateinit var binding: ActivityRegisterDeviceBinding
+
+>>>>>>> 2766b76aa7644483e7455fdd76a35c238cfba6e9
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register_device)
 
         binding = ActivityRegisterDeviceBinding.inflate(layoutInflater)
         setContentView(binding.root)
+<<<<<<< HEAD
         val bundle = intent.extras
         var s:String? = null
         s = bundle!!.getString("imeiDevice","")
@@ -75,5 +90,17 @@ class RegisterDeviceActivity : AppCompatActivity(){
 
             }
         })
+=======
+
+        binding.deviceNameRegisterId.text
+
+        binding.registerButtonId.setOnClickListener{
+
+
+        }
+
+>>>>>>> 2766b76aa7644483e7455fdd76a35c238cfba6e9
     }
+
+
 }

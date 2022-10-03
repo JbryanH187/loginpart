@@ -15,6 +15,10 @@ public interface ApiConnect {
     Call<ResponseLogin> getLogin(@Body RequestLogin bodyRequest);
 
     @POST("imeiRegister")
+<<<<<<< HEAD
     Call<ResponseRegisterDevice> getDeviceRegister(@Body RequestRegisterDevice bodyRequest);
+=======
+    Call<ResponseRegisterDevice> getRegisterDevice(@Body RequestRegisterDevice bodyRequest);
+>>>>>>> 2766b76aa7644483e7455fdd76a35c238cfba6e9
 
 }
