@@ -3,6 +3,7 @@ package com.example.login
 import android.Manifest
 import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import android.content.pm.PackageManager
 import android.os.Build
 import android.os.Bundle
@@ -27,6 +28,8 @@ class MainActivity : AppCompatActivity() {
     private val REQUEST_CODE = 101
     private lateinit var binding: ActivityMainBinding
     private val u:Utilities = Utilities()
+    private  lateinit var preferences: SharedPreferences
+    private var editor: SharedPreferences.Editor? = null
 
     @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -38,6 +41,11 @@ class MainActivity : AppCompatActivity() {
             // if permissions are not provided we are requesting for permissions.
             ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.READ_PHONE_STATE), REQUEST_CODE)
         }
+
+        preferences =
+            applicationContext.getSharedPreferences("facePreferences", 0) // 0 - for private mode
+
+        editor = preferences.edit()
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
@@ -70,27 +78,36 @@ class MainActivity : AppCompatActivity() {
 
                 val validationResultLogin = response.body()!!.resultLogin!!
                 val validationMessageLogin = response.body()!!.messageLogin!!
+                val validationStatusLogin = response.body()!!.status
+//                val bundle = Bundle()
+//                bundle.putCharSequence("deviceImei", imeiToSend)
+                val bundle = Bundle()
 
                 if (validationResultLogin != FALSE){
 
-                    val menuOptions = Intent(this@MainActivity,Menu2::class.java)
-                    startActivity(menuOptions)
+                    if(validationStatusLogin == "A"){
 
-                }else{
+                        bundle.putString("imeiDevice",imeiToSend)
+                        val menuOptions = Intent(this@MainActivity,Menu2::class.java)
+                        startActivity(menuOptions.putExtras(bundle))
+                        editor?.putString("imeiDevice",imeiToSend)
+                        }
+                    else if(validationStatusLogin == "P"){
+                        Toast.makeText(this@MainActivity, "El dispositivo esta en espera de ser activado", Toast.LENGTH_SHORT).show()
+                    }
 
+                }
+                else{
+                    bundle.putString("imeiDevice",imeiToSend)
                     val registerDevice = Intent(this@MainActivity,RegisterDeviceActivity::class.java)
-                    startActivity(registerDevice)
-
+                    startActivity(registerDevice.putExtras(bundle))
+                    editor?.putString("imeiDevice",imeiToSend)
                 }
             }
 
             override fun onFailure(call: Call<ResponseLogin>, t: Throwable) {
                 Toast.makeText(this@MainActivity, "Failed to Upload", Toast.LENGTH_SHORT).show()
             }
-
         })
     }
 }
-
-
-
